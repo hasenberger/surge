@@ -2,6 +2,8 @@
 #!desc=本模块用于获取Cookie信息
 #!system=ios
 
+[script]
+
 # NobyDa
 # > 京东
 # 浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历
