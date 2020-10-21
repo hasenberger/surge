@@ -4,8 +4,8 @@
 
 [Rule]
 # > 虎牙
-URL-REGEX,^https?+:\/\/business\.msstatic\.com\/advertiser\/,Reject
-URL-REGEX,^https?+:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource,Reject
+URL-REGEX,^https?+:\/\/business\.msstatic\.com\/advertiser\/,REJECT
+URL-REGEX,^https?+:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource,REJECT
 
 
 [Script]
@@ -25,4 +25,4 @@ tb_price.js = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\
 
 
 [MITM]
-hostname = %APPEND% api.bilibili.com, www.google.cn, api.abema.io, mp.weixin.qq.com, account.wps.cn, trade.m.taobao.com,api.m.jd.com
+hostname = %APPEND% api.bilibili.com, www.google.cn, api.abema.io, mp.weixin.qq.com, account.wps.cn, trade-ace.m.taobao.com,api.m.jd.com
