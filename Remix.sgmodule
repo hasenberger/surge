@@ -4,12 +4,9 @@
 
 [Rule]
 # > 虎牙
-URL-REGEX,^https?+:\/\/business\.msstatic\.com\/advertiser\/
-URL-REGEX,^https?+:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource
+URL-REGEX,^https?+:\/\/business\.msstatic\.com\/advertiser\/,Reject
+URL-REGEX,^https?+:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource,Reject
 
-# > 哔哩哔哩
-URL-REGEX,^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/
-URL-REGEX,^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash
 
 [Script]
 
