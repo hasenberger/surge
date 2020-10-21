@@ -25,4 +25,4 @@ tb_price.js = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\
 
 
 [MITM]
-hostname = %INSERT% api.bilibili.com, www.google.cn, api.abema.io, mp.weixin.qq.com, account.wps.cn, trade-acs.m.taobao.com,api.m.jd.com
+hostname = %INSERT% api.bilibili.com, www.google.cn, api.abema.io, mp.weixin.qq.com, account.wps.cn, trade-acs.m.taobao.com, api.m.jd.com
