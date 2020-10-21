@@ -23,6 +23,10 @@ tb_price.js = type=http-request,requires-body=1,pattern=^http://.+/amdc/mobileDi
 
 tb_price.js = type=http-response,requires-body=1,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
 
+http-response ^https:\/\/homepage-api.smzdm.com\/home script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js, requires-body=true, timeout=10, tag=什么值得买_首页去广告
+http-response ^https:\/\/haojia-api.smzdm.com\/home\/list script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js, requires-body=true, timeout=10, tag=什么值得买_好价去广告
+http-response ^https:\/\/article-api.smzdm.com\/article\/index_home_page script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js, requires-body=true, timeout=10, tag=什么值得买_首页去广告
+
 
 [MITM]
-hostname = %INSERT% api.bilibili.com, www.google.cn, api.abema.io, mp.weixin.qq.com, account.wps.cn, trade-acs.m.taobao.com, api.m.jd.com
+hostname = %INSERT% api.bilibili.com, www.google.cn, api.abema.io, mp.weixin.qq.com, account.wps.cn, trade-acs.m.taobao.com, api.m.jd.com, homepage-api.smzdm.com, haojia-api.smzdm.com, article-api.smzdm.com
