@@ -2,6 +2,15 @@
 #!desc=本模块用于修正脚本规则
 #!system=ios
 
+[Rule]
+# > 虎牙
+URL-REGEX,^https?+:\/\/business\.msstatic\.com\/advertiser\/
+URL-REGEX,^https?+:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource
+
+# > 哔哩哔哩
+URL-REGEX,^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/
+URL-REGEX,^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash
+
 [Script]
 
 BiliHD.js = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Script/Bilibili/BiliHD.js,script-update-interval=0
